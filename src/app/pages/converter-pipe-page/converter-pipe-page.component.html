@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    <h1>Conversor de Real para Dólar</h1>
+    <div class="converter">
+      <label for="amount">Valor em Real (BRL):</label>
+      <input
+        type="number"
+        [(ngModel)]="moneyValue"
+        placeholder="Digite o valor em BRL"
+      />
+  
+      <label for="rate">Taxa de Câmbio (1 USD = X BRL):</label>
+      <input
+        type="number"
+        placeholder="Digite a taxa de câmbio"
+        readonly="true"
+        value="{{ moneyValue | convertMoney }}"
+      />
+    </div>
+  </div>
+</div>
