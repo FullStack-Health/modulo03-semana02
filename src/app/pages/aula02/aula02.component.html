@@ -1,0 +1,22 @@
+<div class="user-list-container">
+  <h1>Lista de Usuários</h1>
+  <div *ngIf="users.length > 0">
+    <ul id="userList">
+      <li *ngFor="let user of users">
+        {{ user?.name }} - Perfil: {{ user.perfil }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Forma "antiga" -->
+<!-- <li *ngFor="let item of items; let i = index">
+        {{ item?.valor }} - {{ i }}
+    </li> -->
+
+<!-- Forma "nova" -->
+<!-- @for (item of items; let i = $index; track i) {
+        <li>
+            {{ item?.valor }} - {{ i }}
+        </li>
+    } -->

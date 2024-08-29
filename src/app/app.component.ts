@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HomeComponent } from "./pages/home/home.component";
 import { CommonModule, CurrencyPipe } from '@angular/common';
 import { ConvertMoneyPipe } from './pipes/convert-money.pipe';
@@ -14,4 +14,5 @@ import { ConvertMoneyPipe } from './pipes/convert-money.pipe';
 })
 export class AppComponent {
 
+  constructor(){}
 }
