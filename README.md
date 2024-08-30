@@ -1,27 +1,77 @@
-# Semana02
+# Projeto visto na semana 02 :blush:
+Esse projeto foi desenvolvido em ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) versão 17.3.0. e tem como objetivo reunir em uma aplicação os conteudos vistos em aula na semana 02 do módulo 3.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+## Como rodar o projeto localmente :computer:
+1. Instalar o Node.js;
+2. Instalar o Angular CLI;
+3. Clonar o repositório;
+4. Rodar o comando `npm install` para instalar as dependências;
+5. Rodar o comando `ng serve` para rodar o servidor localmente;
+6. Acessar `http://localhost:4200/` no navegador;
 
-## Development server
+## Telas do projeto :mag_right:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Tela de login
+> Não foi implementado a funcionalidade de login, apenas a tela.
 
-## Code scaffolding
+### Tela de Home
+> Tela principal do projeto, onde é possível ver a mensagem: Seja bem-vindo a aplicação.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Tela da Aula01
+> Tela onde é possível ver o conteúdo da aula 01 a qual possui um exemplo prático de pipe para fazer a conversão de real para dólar.
 
-## Build
+### Tela da Aula02
+> Tela onde é possível ver o conteúdo da aula 02 a qual possui uma lista de usuários com sua seguinte permissão de acesso.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Tela da Aula03
+> Tela onde é possível ver uma tabela com a listagem dos alunos feita na API mockada no site [MockAPI](https://mockapi.io) da aula 03.
 
-## Running unit tests
+**Lista de endpoints necessários**
+| Endpoint  | Metodo  | Header?  | Body?  |
+|---|---|---|---|
+| /pacientes  | GET  |  No  | No  |
+| /pacientes/{id}  | GET  | No  | No  |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Volte logo
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWJ2dnptNzRtM29xZDU2dmY4aHp4MWdoY2VnNXAwc296YW9laWJoMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L2UdIWuCRbUL6/giphy.webp">
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- 
+
+Exemplos de markdown
+
+---- hiperlink em um texto
+[Texto com hiperlink](https://seulinkaqui.com.br/)
+
+<img alt="GIF" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="100" height="120" />
+ 
+**Texto em bold**
+
+---- Exemplo de lista
+- 👨🏽‍💻 item 1
+- 👾 item 2
+- 💬 item 3
+
+> exemplo blockquote
+
+
+---- json
+```json
+{
+ "nome":"Exemplo"
+ "idade":"12"
+}
+```
+
+
+---- Tabela
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 | -->
+
+

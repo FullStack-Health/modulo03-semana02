@@ -10,6 +10,11 @@ export class PacientesService {
 
   constructor() { }
 
+  /**
+   * Faz uma requisição para a API para capturar todos os pacientes.
+   * 
+   * @returns - Retorna uma lista de pacientes.
+   */
   list(){
     //pra essa chamada não precisamos de parâmetros e nem de headers
     //mas caso nessecite de headers, é só passar um objeto com os headers
@@ -18,7 +23,13 @@ export class PacientesService {
     return this.httpClient.get(`${this.pathUrl}/paciente`);
   }
 
-  detail(){
-
+  /**
+   * Metodo responsavel por buscar um paciente pelo id.
+   * 
+   * @param id {number} - id do paciente para detelhar ele.
+   * @returns  - Retorna o objeto de paciente detalhado.
+   */
+  detail(id: number){
+    return this.httpClient.get(`${this.pathUrl}/paciente/${id}`);
   }
 }
