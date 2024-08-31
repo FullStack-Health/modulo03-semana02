@@ -8,27 +8,21 @@
                     <th>Data de Nascimento</th>
                     <th>Telefone</th>
                     <th>Email</th>
+                    <th>Favorito</th>
+                    <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>João Silva</td>
-                    <td>15/03/1985</td>
-                    <td>(11) 98765-4321</td>
-                    <td>joao.silva example.com</td>
-                </tr>
-                <tr>
-                    <td>Maria Oliveira</td>
-                    <td>22/07/1990</td>
-                    <td>(21) 98765-4321</td>
-                    <td>maria.oliveiraexample.com</td>
-                </tr>
-                <tr>
-                    <td>Carlos Pereira</td>
-                    <td>08/11/1978</td>
-                    <td>(31) 98765-4321</td>
-                    <td>carlos.pereiraexample.com</td>
-                </tr>
+                @for (paciente of pacientes; track paciente.id){
+                    <tr>
+                        <td>{{ paciente.nome }}</td>
+                        <td>{{ paciente.dataNascimento }}</td>
+                        <td>{{ paciente.telefone }}</td>
+                        <td>{{ paciente.email }}</td>
+                        <td>{{ paciente.favorito }} </td>
+                        <td class="cursor-click" (click)="redirectTo(paciente.id)"> ➡️ </td>
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

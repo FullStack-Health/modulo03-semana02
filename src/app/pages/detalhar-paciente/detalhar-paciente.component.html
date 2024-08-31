@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="card">
+        <h1>Detalhes do Paciente</h1>
+        <div class="detail">
+            <label>Nome:</label>
+            <span>{{ paciente.nome }}</span>
+        </div>
+        <div class="detail">
+            <label>Data de Nascimento:</label>
+            <span>{{ paciente.dataNascimento }}</span>
+        </div>
+        <div class="detail">
+            <label>CPF:</label>
+            <span>{{ paciente.cpf }}</span>
+        </div>
+        <div class="detail">
+            <label>Telefone:</label>
+            <span>{{ paciente.telefone }}</span>
+        </div>
+        <div class="detail">
+            <label>Email:</label>
+            <span>{{ paciente.email }}</span>
+        </div>
+        <div>
+            <button class="btn" (click)="favoritarPaciente()">Favoritar Paciente</button>
+        </div>
+    </div>
+</div>
